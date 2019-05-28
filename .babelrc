@@ -1,0 +1,34 @@
+{
+    "presets": [
+        "@babel/react",
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 2 versions",
+                        "IE >= 10"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "lodash"
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        // [
+        //     "import",
+        //     {
+        //         "libraryName": "antd",
+        //         "style": "css"
+        //     }
+        // ]
+    ]
+}
